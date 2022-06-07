@@ -105,7 +105,7 @@ body {
 
   .about {
     position: static;
-    margin-top: 2%;
+    margin-top: 6vw;
     border: 0;
     margin-bottom: 10%;
     height: 100%;
@@ -127,6 +127,11 @@ body {
   .phone img,
   .email img {
     display: none;
+  }
+
+  .project-header{
+    font-size: 8vw;
+    text-align: center;
   }
 
   .projects img {
