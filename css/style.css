@@ -21,11 +21,12 @@ body {
   height: 19vw;
   width: 100vw;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    354deg,
-    rgb(255, 255, 255) 36%,
-    rgba(8, 145, 178, 1) 37%
-  );
+  background:
+    linear-gradient(
+      354deg,
+      rgb(255, 255, 255) 36%,
+      rgba(8, 145, 178, 1) 37%
+    );
   padding: 2%;
 }
 
@@ -76,15 +77,16 @@ body {
 @media screen and (max-width: 480px) {
   .author-info {
     display: block;
-    position: relative;
+    position: static;
     height: 70vw;
     width: 100vw;
     background: rgb(255, 255, 255);
-    background: linear-gradient(
-      354deg,
-      rgb(255, 255, 255) 36%,
-      rgba(8, 145, 178, 1) 37%
-    );
+    background:
+      linear-gradient(
+        354deg,
+        rgb(255, 255, 255) 36%,
+        rgba(8, 145, 178, 1) 37%
+      );
     padding: 5%;
     margin-bottom: 60vw;
   }
@@ -96,18 +98,19 @@ body {
 
   .author-name {
     font-size: 15vw;
-    color: white;
-    position: absolute;
+    color: black;
+    margin-top: -35vw;
+    margin-left: 20vw;
+    position: static;
     text-align: center;
-    width: 3%;
-    top: 23vw;
-    right: 70vw;
+    width: 50vw;
   }
 
   .about {
     margin-top: 2%;
-    margin-bottom: 10vw;
     border: 0;
+    height: 90%;
+    width: 100%;
   }
 
   .about-title {
@@ -118,7 +121,21 @@ body {
 
   .title-footer {
     font-size: 5vw;
-    margin-bottom: 1%;
+  }
+
+  .phone img,
+  .email img {
+    display: none;
+  }
+
+  .projects img {
+    width: 100%;
+    height: 40vw;
+  }
+
+  div .project-icon img {
+    width: 40px;
+    height: 20px;
   }
 
   .about .social-icon img {
@@ -128,31 +145,18 @@ body {
 
   .social-icon {
     text-align: center;
-    right: -5vw;
-    top: 45vw;
-    width: 100vw;
-    margin-bottom: 10vw;
-
+    float: none;
+    width: 100%;
   }
 
   .projects {
     padding: 5%;
   }
 
-  .projects img {
-    width: 100%;
-    height: 40vw;
-  }
-
   .project-description {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  div .project-icon img {
-    width: 40px;
-    height: 20px;
   }
 
   .project-title,
@@ -165,39 +169,36 @@ body {
     margin-top: 1.5%;
   }
 
-  .author-contacts{
+  .author-contacts {
     width: 100vw;
   }
 
-  .author-contacts  .author img {
+  .author-contacts .author img {
     width: 100%;
     height: 70vw;
   }
 
-  .contact-info{
+  .contact-info {
     background-color: rgba(8, 145, 178, 1);
-
   }
 
-  .contact-title{
+  .contact-title {
     font-size: 8vw;
     margin-bottom: 1%;
     text-align: center;
   }
 
-  .contact-info .title-footer, .phone, .email{
+  .contact-info .title-footer,
+  .phone,
+  .email {
     font-size: 5vw;
     padding: 3%;
   }
 
-   .phone img, .email img{
-     display: none;
-   }
-
-   .contact-info .social-icons{
-     padding: 3%;
-     text-align: center;
-   }
+  .contact-info .social-icons {
+    padding: 3%;
+    text-align: center;
+  }
 
   .contact-info .social-icons img {
     width: 30px;
